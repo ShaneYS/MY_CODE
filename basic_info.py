@@ -4,7 +4,7 @@
 '''
 @author: YangShuai
 @category: opencv-python
-@creation time: 20190106 20:40
+@creation time: 20190106
 @modify time:
 '''
 
