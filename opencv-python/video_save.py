@@ -4,6 +4,7 @@
 '''
 @author: YangShuai
 @category: opencv-python
+@application: 基于opencv将单帧图像保存为视频
 @creation time: 2019/01/09
 @modify time:
 '''

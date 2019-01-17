@@ -4,6 +4,7 @@
 '''
 @author: YangShuai
 @category: opencv-python
+@application: 基于opencv实现视频播放，暂停，退出
 @creation time: 2019/01/06 20:40
 @modify time:
 '''
