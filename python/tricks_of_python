@@ -1,0 +1,2 @@
+1. time python3 1.py    可以在运行后显示运行时间
+2. nohup python3 1.py    可以使程序在终端关闭后继续运行
