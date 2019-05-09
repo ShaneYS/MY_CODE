@@ -16,4 +16,7 @@ mabaxterm
 winscp
 notepadqq
 filezilla（linux间文件传输工具）
-
+lsix
+beyond compare
+vs code
+tldr命令行帮助工具
