@@ -1,0 +1,64 @@
+cuda不区分显卡，通用
+cudnn区分cuda版本
+
+
+
+#用清华的源实例，快
+sudo pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple  XXXX包名
+
+(如有超时，记得使用pip3 --default-timeout=100 install XX包)
+
+1.安装python 环境：
+sudo apt-get install python-software-properties
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:fkrull/deadsnakes
+sudo apt-get update
+sudo apt-get install python3.5
+sudo apt-get install python3-pip
+
+Python切换：
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 100
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.5 150
+
+查看当前python版本
+
+python --version
+
+如果要切换到Python2，执行：
+
+sudo update-alternatives --config python
+
+sudo apt-get update
+sudo apt-get install python3-dev  (安装有问题就按照网页：https://bbs.csdn.net/topics/390462321; 对于python3 换为sudo aptitude install python3-dev)
+sudo apt-get install python3-tk
+
+2.一些相关软件：
+sudo pip3 install cython
+(可能需要安装numpy,1.5版本可以，[1.6及以上版本不稳定会不会报错])
+sudo pip3 install matplotlib terminaltables pycocotools pytest pytest-runner
+
+apt-get install python3-pyqt5
+sudo pip3 install pyqt5
+sudo pip3 install chainercv
+sudo pip3 install opencv-python
+sudo pip3 install imreg-dft
+sudo pip3 install mmcv pandas tqdm sklearn nvidia-ml-py3
+
+$ sudo apt-get install software-properties-common python-software-properties
+$ sudo add-apt-repository ppa:mystic-mirage/pycharm
+$ sudo apt update
+$ sudo apt install pycharm-community（先下载包，再安装）
+
+3. 深度学习环境：
+    a. 安装 Nv 显卡驱动，支持1060, 2080, TiatanX
+	(https://www.cnblogs.com/luofeel/p/8654964.html)
+    b. 安装统一的CUDA 10.0(以及配套CUDNN)
+	解压cudnn10,tar xzvf cudnn-10.0-linux-x64-v7.4.2.24.tgz
+	（安装命令链接）https://blog.csdn.net/wanzhen4330/article/details/81699769
+    c. 安装适合CUDA 10.0的pytorch.
+	(如果发现报错说不支持设备所处的平台，就去官网里找最新的安装命令，记得选对对应的环境版本)      
+	pip3 install https://download.pytorch.org/whl/cu100/torch-1.0.1.post2-cp35-cp35m-linux_x86_64.whl
+        pip3 install torchvision (如有超时，记得使用pip3 --default-timeout=100 install XX包)
+
+
+
